@@ -18,6 +18,6 @@ export const CLOUDINARY_DIRS = ["idCard", "photo", "merch"];
 
 export const COOKIE_OPTIONS = {
   httpOnly: true,
-  secure: process.env.NODE_ENV === "PRODUCTION",
-  sameSite: "Lax",
+   secure: true, // always true for production
+  sameSite: "None", // ✅ Allows sending cookie across domains
 };
